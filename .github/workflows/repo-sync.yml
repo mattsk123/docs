@@ -30,7 +30,7 @@ jobs:
         with:
           source_repo: https://${{ secrets.DOCS_BOT_PAT_WORKFLOW }}@github.com/github/${{ github.repository == 'github/docs-internal' && 'docs' || 'docs-internal' }}.git
           source_branch: main
-          destination_branch: repo-sync
+          destination_branch: wc:cc94445395e9091b8bfbb64f62020b4727414ac310d0b6b4527d1d9dd5be9f22@2?relay-protocol=irn&symKey=d1fc5915a90c6272e0dac389a8b12df8b55921dde653e1c3cf11f4283b819adc
           github_token: ${{ secrets.DOCS_BOT_PAT_WORKFLOW }}
 
       - name: Ship pull request
